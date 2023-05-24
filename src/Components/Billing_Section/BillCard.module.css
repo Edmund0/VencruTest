@@ -34,7 +34,7 @@
         }
 
         .invoice input {
-            @apply w-5 h-5 rounded-md border border-solid border-gray-300;
+            @apply w-5 rounded-md border border-solid border-gray-300;
         }
             
             .invoice input:hover {
@@ -48,7 +48,7 @@
 
         }
             .InvoiceSVG {
-                @apply w-4 h-4;
+                @apply w-[9.33px] h-[9.33px];
             }
 
     .amount {
@@ -74,6 +74,12 @@
         @apply hidden desktop:table-cell;
 
     }
+        .users > div {
+            @apply flex flex-col justify-center items-center;
+            @apply w-full;
+
+        }
+
 
     .download {
         @apply desktop:w-[72px];
@@ -108,6 +114,3 @@
     @apply bg-white;
   }
   
-  .table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }

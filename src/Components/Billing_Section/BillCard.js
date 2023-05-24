@@ -5,6 +5,7 @@ import { ReactComponent as DownArrowSVG     } from '../../Resources/svg/DownArro
 import { ReactComponent as PaidSVG     } from '../../Resources/svg/PaidSVG.svg';
 import { ReactComponent as UnpaidSVG     } from '../../Resources/svg/UnpaidSVG.svg';
 import { useState } from 'react';
+import USERJPG from '../../Resources/img/User.jpg';
 
   const Paid = () => {
 
@@ -65,7 +66,9 @@ const Table = ({ data }) => {
                    {item.active ? <Paid/> : <Unpaid/>}
                 </div>
               </td>
-              <td className={`${styles.users}`}><div></div></td>
+              <td className={`${styles.users}`}>
+                <div className={styles.userImage}><img src={USERJPG} alt=""/></div>
+                </td>
               <td className={`${styles.download}`}><div><div className={styles.SVG}><DownloadSVG/></div></div></td>
             </tr>
           ))}

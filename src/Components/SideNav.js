@@ -12,6 +12,7 @@ import { ReactComponent as AccountSVG     } from '../Resources/svg/navigationSVG
 import { ReactComponent as MenuSVG     } from '../Resources/svg/navigationSVG/MenuSVG.svg';
 import { ReactComponent as SearchSVG     } from '../Resources/svg/navigationSVG/SearchSVG.svg';
 import PHOTOJPG from '../Resources/img/Photo.jpg';
+import AVATARJPG from '../Resources/img/Avatar.jpg';
 import Box from '../Resources/img/Content.png';
 import '../Common/fontStandard.tw.css';
 
@@ -134,7 +135,7 @@ const SideNav = () => {
                             <div className={styles.accountContainer}>
                                 <div className={styles.account}>
                                     <div className={styles.accountCard}>
-                                        <div className={styles.accountImage}><img src={PHOTOJPG} alt=""/></div>
+                                        <div className={styles.accountImage}><img src={AVATARJPG} alt=""/></div>
                                         <div className={styles.accountData}>
                                             <div className={`${styles.accountName} smMediumHeavy`}>{accountName}</div>
                                             <div className={`${styles.accountEmail} smNormalFaint`}>{accountEmail}</div>

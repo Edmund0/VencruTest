@@ -55,7 +55,7 @@ const PaymentMethod = () => {
                             <div className={styles.AltEmailInput}>
                                 <div className="relative">
                                     <input className={`pl-10`} type="email" placeholder="billing@untitledui.com"/>
-                                    <div className={`${styles.SVG} absolute left-1 top-1 h-5 w-5 mt-2 ml-2 text-gray-400`}><MailSVG/></div>
+                                    <div className={`${styles.SVG} absolute left-1 top-2 h-5 w-5 mt-2 ml-2 text-gray-400`}><MailSVG/></div>
                                 </div>
                             </div>
                         </div>
