@@ -1,0 +1,17 @@
+
+
+
+.mdNormalFaint { @apply text-base  font-normal text-gray-500; }
+.mdMediumLight { @apply text-base  font-medium text-gray-700; }
+
+.smNormalFaint { @apply text-sm    font-normal text-gray-500; }
+.smMediumFaint { @apply text-sm    font-medium text-gray-500; }
+.smMediumLight { @apply text-sm    font-medium text-gray-700; }
+.smMediumHeavy { @apply text-sm    font-medium text-gray-900; }
+
+.xl3MediumHeavy { @apply text-3xl   font-medium text-gray-900; }
+.xl2MediumHeavy { @apply text-2xl   font-medium text-gray-900; }
+.lgMediumHeavy { @apply text-lg    font-medium text-gray-900; }
+
+.xsMediumFaint { @apply text-xs   font-medium text-gray-500; }
+

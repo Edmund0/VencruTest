@@ -1,0 +1,105 @@
+.SVG {
+    @apply w-6 h-6 text-gray-500;
+}
+
+.CheckStatus {
+
+    @apply flex flex-row justify-center items-center;
+    @apply bg-green-50;
+    @apply rounded-2xl py-[2px] pl-2 pr-[6px];
+    @apply text-green-700 text-center;
+    @apply text-xs   font-medium;
+
+}
+
+
+
+.table {
+    @apply w-full border-collapse;
+    @apply border rounded-lg border-solid border-gray-200 shadow-md overflow-hidden;
+    @apply bg-white;
+
+
+  }
+
+    .invoice {
+
+        @apply w-[229px] desktop:w-[495px];
+
+    }
+
+        .invoice > div {
+            @apply flex flex-row items-center;
+            @apply gap-3;
+        }
+
+        .invoice input {
+            @apply w-5 h-5 rounded-md border border-solid border-gray-300;
+        }
+
+        .InvoiceTitle {
+
+            @apply flex flex-row items-center;
+            @apply gap-1;
+
+        }
+            .InvoiceSVG {
+                @apply w-4 h-4;
+            }
+
+    .amount {
+
+        @apply w-36 desktop:w-[127px];
+
+    }
+    
+    .date {
+        @apply desktop:w-[127px];
+        @apply hidden desktop:table-cell;
+
+    }
+
+    .status {
+        @apply desktop:w-[103px];
+        @apply hidden desktop:table-cell;
+
+    }
+
+    .users{
+        @apply desktop:w-[172px];
+        @apply hidden desktop:table-cell;
+
+    }
+
+    .download {
+        @apply desktop:w-[72px];
+        @apply hidden desktop:table-cell;
+        
+    }
+
+        .download > div {
+            @apply flex flex-col justify-center items-center;
+            @apply w-full;
+        }
+
+  .table th,
+  .table td {
+
+    @apply border border-x-0 border-y border-solid border-gray-200;
+    @apply p-2 text-left;
+    
+  }
+  
+  .table th {
+    @apply py-3 px-6;
+    @apply bg-gray-50;
+  }
+
+  .table td {
+    @apply py-4 px-6;
+    @apply bg-white;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }

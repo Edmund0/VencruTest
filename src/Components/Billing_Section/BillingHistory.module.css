@@ -1,0 +1,42 @@
+
+
+
+
+.billContainer {
+
+    @apply flex flex-col items-start;
+    @apply gap-6 w-full;
+    /* height: 664px; */
+
+
+}
+
+    .billHeader {
+
+        @apply flex flex-col items-start;
+        @apply px-4 gap-4 w-full;
+        /* height: 85px; */
+
+    }
+
+        .billDownload {
+
+            @apply flex flex-row items-center justify-center;
+            @apply py-[10px] px-4 gap-2 w-40;
+            @apply border rounded-lg border-solid border-gray-300 shadow-sm;
+            @apply bg-white
+            /* height: 40px; */
+            
+        }
+
+            .SVG {
+                @apply w-6 h-6;
+            }
+
+    .billTable {
+
+
+        @apply flex flex-col items-start;
+        @apply desktop:px-4 desktop:gap-4 desktop:w-full;
+
+    }

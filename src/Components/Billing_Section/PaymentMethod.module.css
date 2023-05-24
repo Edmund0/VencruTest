@@ -1,0 +1,216 @@
+
+
+.moduleContainer {
+
+    /* Mobile */
+    @apply flex flex-col items-start;
+    @apply gap-6 w-full px-4;
+
+    /* 
+    height: 639px;
+    */
+
+}
+
+    .paymentMethod {
+
+        /* Mobile */
+        @apply flex flex-col items-start;
+        @apply gap-5 w-full pb-5;
+        @apply border-b-[1px] border-solid border-gray-200 w-full;
+
+        
+            /* 
+                    width: 343px;
+                    height: 74px;
+            */
+
+
+        
+    }
+
+        .paymentText {
+
+            /* Mobile */
+            @apply flex flex-col items-start;
+            @apply gap-1 w-full;
+            /* height: 52px;*/
+
+        }
+
+    .formContainer {
+
+            /* Mobile */
+            @apply flex flex-col items-start;
+            @apply gap-5 w-full;
+            /* height: 541px;*/
+    }
+
+        .contactEmail {
+
+            /* Mobile */
+            @apply flex flex-col items-start;
+            @apply gap-5 w-full;
+            /* height: 192px;*/
+
+            /* Desktop */
+            @apply desktop:flex-row;
+            @apply desktop:gap-8
+            /* height: 132px;*/
+
+        }
+
+            .contactEmailHeader {
+
+                /* Mobile */
+                @apply flex flex-col items-start;
+                @apply w-full;
+                /* height: 40px;*/
+                
+            }
+
+                .contactEmailTitle {
+                    
+                }
+
+                .contactEmailText{
+
+                }
+
+            .contactEmailForm {
+
+                    /* Mobile */
+                    @apply flex flex-col items-start;
+                    @apply gap-4 w-full;
+                    /* height: 132px;*/
+
+            }
+
+                .MainEmail {
+
+                        /* Mobile */
+                        @apply flex flex-row items-start;
+                        @apply gap-2 w-full p-[1px];
+                        /* height: 40px;*/
+                    
+                }
+
+                    .MainEmailPadding {
+
+                        /* Mobile */
+                        @apply pt-[1px];
+                        
+                    }
+
+                    .MainEmailLabel{
+                        
+
+                    }
+
+                        .MainEmailTitle{
+                            
+                        }
+
+                        .MainEmailText {
+
+                        }
+
+                .AltEmail {
+
+                        /* Mobile */
+                        @apply flex flex-col items-start;
+                        @apply gap-3 w-full p-[1px];
+                        /* height: 40px;*/
+
+                }
+
+                    .AltEmailRadio{
+
+                        /* Mobile */
+                        @apply flex flex-row items-center;
+                        @apply gap-2 w-full;
+                        /* height: 40px;*/
+
+                    }
+
+                        .AltEmailLabel{
+
+                        }
+
+                    .AltEmailInput {
+
+                        /* Mobile */
+                        @apply flex flex-row items-start;
+                        @apply pl-6 w-full;
+                        /* height: 44px;*/
+                        
+                    }
+
+                        .AltEmailInput > input {
+                            @apply w-full;
+                        }
+
+        .divider {
+
+            @apply border-t-[1px] border-solid border-gray-200 w-full;
+
+        }
+
+        .cardDetails {
+
+            /* Mobile */
+            @apply flex flex-col items-start;
+            @apply gap-5 w-full;
+            /* height: 308px;*/
+
+            /* Desktop */
+            @apply desktop:flex-row;
+            @apply desktop:gap-8
+            /* height: 248px;*/
+
+
+        }
+
+            .cardDetailsHeader {
+
+                /* Mobile */
+                @apply flex flex-col items-start;
+                @apply w-full;
+                /* height: 40px;*/
+
+                
+            }
+
+            .cardDetailsForm {
+
+                /* Mobile */
+                @apply flex flex-col items-start;
+                @apply gap-4 w-full;
+                /* height: 248px;*/
+
+            }
+
+                .cardGroup {
+                    
+                    /* Mobile */
+                    @apply flex flex-col items-start;
+                    @apply gap-3 w-full;
+                    /* height: 212px;*/
+
+                }
+
+                .cardAction {
+
+                    /* Mobile */
+                    @apply flex flex-row items-center;
+                    @apply gap-2 w-full;
+                    /* height: 20px;*/
+
+                }
+
+
+                    .SVG {
+                        @apply w-5 h-5;
+                    }
+
+

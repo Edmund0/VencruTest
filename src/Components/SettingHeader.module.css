@@ -1,0 +1,127 @@
+
+
+.SettingHeaderContainer {
+
+    @apply flex flex-col items-start;
+    @apply w-[375px] h-auto;
+
+    @apply desktop:flex-row;
+    @apply desktop:w-[1160px];
+
+}
+
+    .SettingHeader {
+
+        @apply flex flex-col items-start;
+        @apply px-4 gap-6;
+        @apply w-full;
+        /*height: 124px;*/
+        
+    }
+
+        .pageHeader {
+
+            @apply flex flex-col items-start;
+            @apply gap-2 w-full;
+            /*height: 66px;*/
+            
+        }
+
+            .pageHeaderTitle {
+
+                /* For Later Use */
+
+            }
+
+            .pageHeaderText {
+
+                /* For Later Use */
+
+            }
+
+        .buttonTab {
+
+            @apply flex flex-col items-start w-full;
+            @apply h-10;
+            /* USED JS IN-LINE TO FIX ISSUE WITH SCROLLING - CHECK JSX MODULE
+            @apply relative desktop:static;
+            @apply overflow-x-scroll;
+            */
+
+        }
+
+            .buttonGroup {
+
+                @apply flex flex-row items-start;
+                @apply shadow-sm;
+                /* USED JS IN-LINE TO FIX ISSUE WITH SCROLLING - CHECK JSX MODULE
+                @apply absolute left-[-344px] top-0 desktop:static;
+                */
+
+            }
+
+                .buttonItemStart {
+
+                    @apply flex flex-row justify-center items-center;
+                    @apply py-[10px] px-4 h-10;
+                    @apply bg-white;
+                    @apply border border-solid border-gray-300;
+                    @apply rounded-tl-lg rounded-bl-lg;
+                    /* width: 101px; */
+
+                }
+
+                    .buttonItemStart:hover {
+
+                        @apply cursor-pointer;
+
+                    }
+                    
+                    .buttonItemStart:active {
+
+                        @apply bg-gray-50;
+
+                    }
+
+                .buttonItem {
+
+                    @apply flex flex-row justify-center items-center;
+                    @apply py-[10px] px-4 h-10;
+                    @apply bg-white;
+                    @apply border border-solid border-gray-300 border-l-0;
+
+                }
+
+                    .buttonItem:hover {
+
+                        @apply cursor-pointer;
+
+                    }
+
+                    .buttonItem:active {
+
+                        @apply bg-gray-50;
+
+                    }
+
+                .buttonItemEnd {
+
+                    @apply flex flex-row justify-center items-center;
+                    @apply py-[10px] px-4 h-10;
+                    @apply bg-white;
+                    @apply border border-solid border-gray-300 border-l-0;
+                    @apply rounded-tr-lg rounded-br-lg;
+
+                }
+
+                    .buttonItemEnd:hover {
+
+                        @apply cursor-pointer;
+
+                    }
+
+                    .buttonItemEnd:active {
+
+                        @apply bg-gray-50;
+
+                    }

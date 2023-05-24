@@ -1,0 +1,13 @@
+
+
+div.activeItem {
+
+    @apply bg-gray-50;
+
+}
+
+.mobileHidden {
+
+    @apply desktop:hidden;
+
+}

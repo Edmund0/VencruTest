@@ -1,0 +1,256 @@
+
+
+
+
+.sideNav {
+    @apply flex flex-col items-start;
+    @apply w-[375px] h-auto;
+
+    @apply desktop:flex-row;
+    @apply desktop:w-[280px];
+
+
+}
+
+    .divider {/* Problem with Divider */
+        @apply border-t-[1px] border-solid border-gray-300 w-full;
+        @apply desktop:border-l-[1px] desktop:h-full desktop:w-auto;
+    }
+
+    .mainSideNav {
+
+        @apply flex flex-col items-start justify-between;
+        @apply gap-6 w-full h-auto;
+        /* h-[960px] */
+
+    }
+
+        .nav {
+
+            @apply flex flex-col items-start; /* removes the item on mobile */
+            @apply pt-8;
+            @apply gap-6 w-full h-auto;
+            /* h-[416px] */
+            
+        }
+
+            .header {
+
+                @apply flex flex-col items-start justify-center;
+                @apply pl-5 pr-6;
+                @apply w-full h-auto;
+
+            }
+
+                .logo {
+
+                    @apply flex flex-col justify-between;
+                    @apply py-3 pl-2 pr-4 w-full;
+                    
+
+                }
+
+                    .logoBox {
+
+                        
+                        @apply flex flex-row justify-between items-center;
+                        @apply h-[52px];
+                        /*to make it 64px */
+
+                        
+                    }
+
+                        .logoIcon {
+
+                            @apply flex flex-row justify-between;
+                            @apply h-8 gap-2;
+
+                            /*@apply w-36*/
+                            
+                        }
+
+                        .logoButton {
+
+                            @apply w-10 h-10;
+                            @apply desktop:hidden;
+
+                        }
+
+            .search {
+
+                @apply hidden flex-col items-start; /* removes the item on mobile */
+                @apply desktop:flex;
+                @apply gap-1 px-6;
+                @apply w-full;
+
+            }
+
+                .searchBox {
+
+                    @apply w-full;
+                    
+                }
+            
+
+            .navigation {
+
+                @apply hidden flex-col items-start; /* removes the item on mobile */
+                @apply desktop:flex;
+                @apply gap-1 px-4;
+                @apply w-full;
+                /* height: 260px; */
+
+            }
+
+                .navCard {
+
+                    @apply flex flex-col items-start;
+                    @apply border-r-8 w-full;
+                    /*  border-radius: 6px */
+
+                }
+
+                    .navItem {
+
+                        @apply flex flex-row items-center justify-between;
+                        @apply gap-[105px] py-2 px-3;
+                        @apply h-10;
+
+                    }
+
+                        .navObject {
+
+                            @apply flex flex-row items-center;
+                            @apply gap-3 h-6;
+
+                        }
+
+                            .SVG {
+                                @apply w-6 h-6;
+                            }
+                        
+                        .navAction {
+
+                            @apply flex flex-row items-center;
+                            @apply gap-2 h-6;
+
+                        }
+
+            .footer {
+
+                @apply hidden flex-col items-start;  /* removes the item on mobile */
+                @apply desktop:flex;
+                @apply pb-8 gap-6;
+                @apply w-full;
+                /* h 521px */
+
+
+            }
+
+                .footerNavigation {
+
+                    @apply flex flex-col items-start;
+                    @apply gap-2 px-4 w-full;
+                    /* height: 84px */
+
+
+                }
+
+                .footerMain {
+
+                    @apply flex flex-col items-start;
+                    @apply gap-2 px-4 w-full;
+
+                }
+
+                    .feature {
+
+                        @apply flex flex-col items-start;
+                        @apply gap-4 w-auto py-5 px-4;
+                        @apply bg-gray-50 border-r-8;
+                        /* height: 292px; */
+
+                    }
+
+                        .featureContent {
+
+                            @apply flex flex-col items-start;
+                            @apply gap-2;
+                            @apply w-auto;
+                            /* height: 64px */
+
+                        }
+                        
+                        .featureImage {
+
+                            @apply inline-block w-auto h-[136px] border-r-8;
+                            @apply bg-purple-100;
+                            /*background: #F4EBFF */
+
+                        }
+
+                        .featureAction {
+
+                            @apply flex flex-row items-start;
+                            @apply h-5;
+                            /* width: 149px */
+
+                        }
+
+
+                    .footerDivider {
+
+                        @apply border-t-[1px] border-solid border-gray-200 w-full;
+
+                    }
+
+
+                    .accountContainer {
+
+                        @apply flex flex-col items-start w-full;
+
+                    }
+
+                        .account {
+
+                            @apply flex flex-row justify-between items-start;
+                            @apply px-2 h-10;
+                            /* width: 247px; */
+
+                        }
+
+                        .accountCard {
+
+                            @apply flex flex-row items-center;
+                            @apply gap-3 h-auto;
+
+                        }
+
+                            .accountImage {
+
+                                @apply flex flex-col justify-center items-center;
+                                @apply w-10 border-r-[200px];
+                                /* h-40px */
+
+                            }
+
+                            .accountData {
+
+                            }
+
+                                .accountName {
+
+                                }
+                                
+                                .accountEmail {
+
+                                }
+
+                        .AccountSVG {
+
+                            @apply w-5 h-5;
+
+                        }
+
+
+

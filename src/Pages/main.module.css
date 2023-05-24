@@ -1,0 +1,101 @@
+
+
+
+.appContainer {
+
+    /* Mobile */
+    @apply flex flex-col items-start;
+    @apply relative;
+    @apply w-[375px];
+
+    /* Desktop */
+    @apply desktop:flex-row;
+    @apply desktop:w-[1440px];
+
+
+
+    /* MOBILE
+
+        height: 1635px;
+
+       DESKTOP
+        
+        height: 960px;
+
+    */
+
+    /* TEST */
+    /*
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    */
+
+
+}
+
+
+    .appNav { 
+
+        
+        /* Mobile */
+        @apply flex flex-col items-center;
+        @apply w-full;
+
+        /* Desktop */
+        @apply desktop:flex-row;
+        @apply desktop:w-[280px];
+
+        /* MOBILE
+
+            height: 64px;
+
+        DESKTOP
+            
+            height: 960px;
+
+        */
+
+    }
+
+    .appMainContainter { 
+
+        /* Mobile */
+        @apply flex flex-col items-center;
+        @apply w-full;
+        @apply bg-gray-50;
+
+        /* Desktop */
+        @apply desktop:flex-row;
+        @apply desktop:w-[1160px];
+
+        /* Mobile */
+        /* Problem Container is not taking the size of its parent container 
+              @apply flex flex-row items-start;
+                @apply desktop:h-full;!*/
+
+
+        }
+
+        .appMain {
+            /* Mobile */
+            @apply flex flex-col items-start;
+            @apply pt-8 pb-12 gap-8 w-full;
+            @apply overflow-y-scroll overflow-x-hidden;
+            /* How would i know if this works */
+
+            /* Desktop */
+            @apply desktop:w-[1160px];
+
+            /* MOBILE
+
+                height: 1571px;
+
+            DESKTOP
+                
+                height: 1413px;
+
+            */
+        }
+
+
