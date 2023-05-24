@@ -2,22 +2,22 @@ import styles from './CardDetail.module.css';
 import { ReactComponent as Visa    } from '../../Resources/svg/Visa.svg';
 import { ReactComponent as Mastercard    } from '../../Resources/svg/Mastercard.svg';
 import '../../Common/fontStandard.tw.css';
-import { useState, useRef } from 'react';
 
-const CardDetail = ({entry, exp, active, logo}) => {
+const CardDetail = ({entry, exp, isActive, logo}) => {
 
-    const [isActive, setIsActive] = useState(active);
+    /*
+    const [isActive, setIsActive] = useState(active); */
 
     /* REVIEW */
-    const toggleClass = (event) => {
 
+    /*
+    const toggleClass = (event) => {
+  
         setIsActive(!isActive);
 
-        // Prevent event propagation to parent elements
-        event.preventDefault();
-        event.stopPropagation();
-
     };
+
+    */
   
 
     return ( 
@@ -39,13 +39,7 @@ const CardDetail = ({entry, exp, active, logo}) => {
                 </div>
             </div>
             <div className={styles.cardRadio}>
-                {
-                (isActive)
-                ?
-                <input type="radio" id="alt" name="drone" value="alt" checked onChange={toggleClass}/>
-                :
-                <input type="radio" id="alt" name="drone" value="alt" onChange={toggleClass}/>
-                }
+                <input type="radio" id="alt" name="drone" value="alt" checked={isActive}/>
             </div>
         </div> 
     

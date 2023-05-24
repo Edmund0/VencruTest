@@ -3,8 +3,18 @@ import CardDetail from './CardDetail';
 import '../../Common/fontStandard.tw.css';
 import { ReactComponent as PlusSVG     } from '../../Resources/svg/PlusSVG.svg';
 import { ReactComponent as MailSVG     } from '../../Resources/svg/MailSVG.svg';
+import { useState, useRef } from 'react';
 
 const PaymentMethod = () => {
+
+    const [isActiveState, setIsActive] = useState(true);
+
+    const toggleClass = (event) => {
+  
+        setIsActive(!isActiveState);
+
+    };
+
 
     const accountName = "Olivia Rhye";
     const accountEmail = "olivia@untitledui.com";
@@ -60,9 +70,9 @@ const PaymentMethod = () => {
                         <div className={`${styles.cardDetailsText} smNormalFaint`}>Select default payment method.</div>
                     </div>
                     <div className={styles.cardDetailsForm}>
-                        <fieldset className={styles.cardGroup}>
-                            <CardDetail entry={"Visa ending in 1234"} exp={"06/2024"} active={true} logo={"Visa"}></CardDetail>
-                            <CardDetail entry={"Mastecard ending in 1234"} exp={"06/2024"} active={false} logo={"Mastercard"}></CardDetail>
+                        <fieldset className={styles.cardGroup} onChange={toggleClass} >
+                            <CardDetail key={1} entry={"Visa ending in 1234"} exp={"06/2024"} isActive={isActiveState} logo={"Visa"}></CardDetail>
+                            <CardDetail key={2} entry={"Mastecard ending in 1234"} exp={"06/2024"} isActive={!isActiveState} logo={"Mastercard"}></CardDetail>
                         </fieldset>
                         <div className={`${styles.cardAction} smMediumFaint`}> 
                             <div className={styles.SVG}><PlusSVG/></div>
