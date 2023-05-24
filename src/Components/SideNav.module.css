@@ -46,6 +46,7 @@
 
                     @apply flex flex-col justify-between;
                     @apply py-3 pl-2 pr-4 w-full;
+                    @apply desktop:py-0;
                     
 
                 }
@@ -55,6 +56,7 @@
                         
                         @apply flex flex-row justify-between items-center;
                         @apply h-[52px];
+                        @apply desktop:h-10;
                         /*to make it 64px */
 
                         
@@ -62,7 +64,7 @@
 
                         .logoIcon {
 
-                            @apply flex flex-row justify-between;
+                            @apply flex flex-row justify-between items-center;
                             @apply h-8 gap-2;
 
                             /*@apply w-36*/

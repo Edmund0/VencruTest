@@ -41,7 +41,7 @@ const SideNav = () => {
                         <div className={styles.search}> {/* Internal HTML Framework Incomplete */}
                             <div className={styles.searchBox}>
                                 <div className="relative">
-                                <input  className={`pl-10`} type="text" placeholder="Search" id="myInput"></input>
+                                <input  className={`pl-10 w-full`} type="text" placeholder="Search" id="myInput"></input>
                                 <div className={`${styles.SVG} absolute left-1 top-1 h-5 w-5 mt-2 ml-2 text-gray-400`}><SearchSVG/></div>
                                 </div>
                             </div>

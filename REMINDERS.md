@@ -4,3 +4,4 @@
 - [ ] Fix the issue with the Scrolling Section Settings (Mobile)
 
 - [ ] Delete height comments
+- [ ] Fix problem with SideNAV on Mac
