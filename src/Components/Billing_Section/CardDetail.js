@@ -8,21 +8,21 @@ const CardDetail = ({entry, exp, active, logo}) => {
 
     const [isActive, setIsActive] = useState(active);
 
-    /* OH GOD NO */
-    const toggleClass = () => {
-      if (isActive){
-
-      } else {
+    /* REVIEW */
+    const toggleClass = (event) => {
 
         setIsActive(!isActive);
 
-      }
+        // Prevent event propagation to parent elements
+        event.preventDefault();
+        event.stopPropagation();
+
     };
   
 
     return ( 
     
-        <div className={`${styles.cardContainer} ${active ? styles.active : ''}`}>
+        <div className={`${styles.cardContainer} ${isActive ? styles.active : ''}`}>
             <div className={styles.cardInformation}>
                 <div className={styles.SVG}>
                         {(logo == "Visa") ? <Visa/> : <Mastercard/>}
@@ -40,11 +40,11 @@ const CardDetail = ({entry, exp, active, logo}) => {
             </div>
             <div className={styles.cardRadio}>
                 {
-                (active)
+                (isActive)
                 ?
-                <input type="radio" id="alt" name="drone" value="alt" checked onClick={toggleClass}/>
+                <input type="radio" id="alt" name="drone" value="alt" checked onChange={toggleClass}/>
                 :
-                <input type="radio" id="alt" name="drone" value="alt" onClick={toggleClass}/>
+                <input type="radio" id="alt" name="drone" value="alt" onChange={toggleClass}/>
                 }
             </div>
         </div> 

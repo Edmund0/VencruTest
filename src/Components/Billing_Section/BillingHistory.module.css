@@ -34,6 +34,12 @@
                                 @apply cursor-pointer;
             }
 
+            .billDownload:active {
+        
+                @apply bg-gray-50;
+
+            }
+
             .SVG {
                 @apply w-6 h-6;
             }
@@ -42,6 +48,7 @@
 
 
         @apply flex flex-col items-start;
+        @apply w-full px-0;
         @apply desktop:px-4 desktop:gap-4 desktop:w-full;
 
     }

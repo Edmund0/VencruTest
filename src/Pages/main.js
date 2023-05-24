@@ -13,16 +13,31 @@ const Main = () => {
     const zerothElementRef = useRef(null);
     const [siblingHeight, setSiblingHeight] = useState(0);
     useEffect(() => {
-      if (firstElementRef.current) {
-        const firstElementHeight = firstElementRef.current.offsetHeight;
-        const zerothElementWidth = zerothElementRef.current.offsetWidth;
-        setSiblingHeight(firstElementHeight);
-        if (zerothElementWidth <= 640) {/* This value should be the desktop: value (Please see tailwind.config.js) */
-            setSiblingHeight("100vh");
-        } else {
-            setSiblingHeight(firstElementHeight);
+
+        const handleResize = () => {
+
+            if (firstElementRef.current) {
+                const firstElementHeight = firstElementRef.current.offsetHeight;
+                const zerothElementWidth = zerothElementRef.current.offsetWidth;
+                setSiblingHeight(firstElementHeight);
+                if (zerothElementWidth <= 640) {/* This value should be the desktop: value (Please see tailwind.config.js) */
+                    setSiblingHeight("100vh");
+                } else {
+                    setSiblingHeight(firstElementHeight);
+                }
+              }
+
         }
-      }
+
+        // Ensures that the code runs at least once
+        handleResize();
+
+        // Attach the resize event listener
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup: remove the resize event listener
+        return () => { window.removeEventListener('resize', handleResize); };
+
     }, []);
 
     return ( 
@@ -31,7 +46,7 @@ const Main = () => {
 
             <nav className={styles.appNav} ref={firstElementRef}><SideNav/></nav>
             <main className={styles.appMainContainter} style={{ position: 'relative', height: siblingHeight,  overflowY: 'scroll' }}>
-                <div className={styles.appMain} style={{ position: 'absolute', top: '24px' }}>
+                <div className={styles.appMain} style={{ position: 'absolute' }}>
                     <SettingHeader/>
                     <PaymentMethod/>
                     <BillingHistory/>

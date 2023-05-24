@@ -80,12 +80,14 @@
         .appMain {
             /* Mobile */
             @apply flex flex-col items-start;
-            @apply pt-8 pb-12 gap-8 w-full;
-            @apply overflow-y-scroll overflow-x-hidden;
-            /* How would i know if this works */
+            @apply pt-8 pb-12 gap-8 w-full top-16;
+
+            /* 
+            @apply overflow-y-scroll overflow-x-hidden; */
 
             /* Desktop */
-            @apply desktop:w-[1160px];
+            @apply desktop:w-[1160px] desktop:top-5;
+
 
             
 

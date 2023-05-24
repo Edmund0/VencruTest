@@ -1,0 +1,8 @@
+
+.Badge {
+
+    @apply flex flex-row items-center justify-center;
+    @apply py-0.5 px-2.5 h-full rounded-2xl;
+    @apply bg-gray-100;
+
+}

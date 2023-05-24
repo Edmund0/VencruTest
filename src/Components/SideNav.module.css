@@ -15,7 +15,7 @@
 
 .sideNavContainer {
 
-    @apply inline-block w-full h-[100px];
+    @apply inline-block w-full h-auto;
     @apply desktop:block desktop:w-auto desktop:h-auto;
 
 }
@@ -48,7 +48,7 @@
         .nav {
 
             @apply flex flex-col items-start; /* removes the item on mobile */
-            @apply pt-8;
+            @apply desktop:pt-8;
             @apply gap-6 w-full h-auto;
             /* h-[416px] */
             
@@ -239,11 +239,16 @@
 
                         .featureAction {
 
-                            @apply flex flex-row items-start;
-                            @apply h-5;
+                            @apply flex flex-row items-start justify-center;
+                            @apply h-5 gap-3;
                             /* width: 149px */
 
                         }
+
+                            .featureActionLink {
+                                @apply text-sm font-medium text-[#6941C6];
+                            }
+
 
 
                     .footerDivider {
@@ -262,7 +267,7 @@
                         .account {
 
                             @apply flex flex-row justify-between items-start;
-                            @apply px-2 h-10;
+                            @apply px-2 h-10 gap-6;
                             /* width: 247px; */
 
                         }

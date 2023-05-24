@@ -12,10 +12,11 @@ import { ReactComponent as AccountSVG     } from '../Resources/svg/navigationSVG
 import { ReactComponent as MenuSVG     } from '../Resources/svg/navigationSVG/MenuSVG.svg';
 import { ReactComponent as SearchSVG     } from '../Resources/svg/navigationSVG/SearchSVG.svg';
 import PHOTOJPG from '../Resources/img/Photo.jpg';
-import Box from '../Resources/img/box-24.png';
+import Box from '../Resources/img/Content.png';
 import '../Common/fontStandard.tw.css';
 
 import { useState } from 'react';
+import Badge from './Badge';
 
 
 
@@ -71,7 +72,7 @@ const SideNav = () => {
                                 <div className={styles.navObject}>
                                     <div className={styles.SVG}><DashboardSVG/></div><div>Dashboard</div>   
                                 </div>
-                                <div className={styles.navAction}></div>
+                                <div className={styles.navAction}><Badge actions={10}/></div>
                             </div></div>
                             <div className={styles.navCard}><div className={styles.navItem}>
                                 <div className={styles.navObject}>
@@ -118,13 +119,13 @@ const SideNav = () => {
                         <div className={styles.footerMain}>
                             <div className={styles.feature}>
                                 <div className={styles.featureContent}>
-                                    <div>New features available!</div>
-                                    <div>Check out the new dashboard view. Pages now load faster. </div>
+                                    <div className="smMediumHeavy">New features available!</div>
+                                    <div className="smNormalFaint">Check out the new dashboard view. Pages now load faster. </div>
                                 </div>
                                 <div className={styles.featureImage}><img src={PHOTOJPG} alt=""/></div>
                                 <div className={styles.featureAction}>
-                                    <div>Dismiss</div>
-                                    <div><a>What's new?</a></div>
+                                    <div className="smNormalFaint">Dismiss</div>
+                                    <div className={styles.featureActionLink}><a>What's new?</a></div>
                                 </div>
                             </div>
 
@@ -135,8 +136,8 @@ const SideNav = () => {
                                     <div className={styles.accountCard}>
                                         <div className={styles.accountImage}><img src={PHOTOJPG} alt=""/></div>
                                         <div className={styles.accountData}>
-                                            <div className={styles.accountName}>{accountName}</div>
-                                            <div className={styles.accountEmail}>{accountEmail}</div>
+                                            <div className={`${styles.accountName} smMediumHeavy`}>{accountName}</div>
+                                            <div className={`${styles.accountEmail} smNormalFaint`}>{accountEmail}</div>
                                         </div>
                                     </div>
                                     <div className={styles.AccountSVG}><AccountSVG/></div>
