@@ -15,14 +15,14 @@
 
 .sideNavContainer {
 
-    @apply inline-block w-[375px] h-[100px];
+    @apply inline-block w-full h-[100px];
     @apply desktop:block desktop:w-auto desktop:h-auto;
 
 }
 
 .sideNav {
     @apply flex flex-col items-start;
-    @apply w-[375px] h-auto;
+    @apply w-full h-auto;
 
     @apply desktop:flex-row;
     @apply desktop:w-[280px];

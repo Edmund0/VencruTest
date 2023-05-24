@@ -17,7 +17,7 @@ const Main = () => {
         const firstElementHeight = firstElementRef.current.offsetHeight;
         const zerothElementWidth = zerothElementRef.current.offsetWidth;
         setSiblingHeight(firstElementHeight);
-        if (zerothElementWidth <= 640) {
+        if (zerothElementWidth <= 640) {/* This value should be the desktop: value (Please see tailwind.config.js) */
             setSiblingHeight("100vh");
         } else {
             setSiblingHeight(firstElementHeight);

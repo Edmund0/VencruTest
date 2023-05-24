@@ -9,6 +9,10 @@ module.exports = {
 
       'desktop': '640px',
       // custom desktop size
+      /* Important comment: 
+          There is another place where the information of desktop is important
+          In the "src/Pages/main.js" file, there is 
+      */
 
     },
   },

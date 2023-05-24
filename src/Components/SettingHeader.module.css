@@ -3,7 +3,7 @@
 .SettingHeaderContainer {
 
     @apply flex flex-col items-start;
-    @apply w-[375px] h-auto;
+    @apply w-full h-auto;
 
     @apply desktop:flex-row;
     @apply desktop:w-[1160px];
@@ -47,6 +47,13 @@
             @apply relative desktop:static;
             @apply overflow-x-scroll;
             */
+            @apply border border-solid border-gray-300;
+            @apply p-[-1px] rounded-lg;
+
+            @apply desktop:p-0 desktop:border-none;
+
+
+            
 
         }
 

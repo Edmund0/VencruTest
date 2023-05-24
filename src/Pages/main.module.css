@@ -6,7 +6,7 @@
     /* Mobile */
     @apply flex flex-col items-start;
     @apply relative;
-    @apply w-[375px];
+    @apply w-full;
 
     /* Desktop */
     @apply desktop:flex-row;
