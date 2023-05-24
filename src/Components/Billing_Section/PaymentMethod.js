@@ -60,12 +60,10 @@ const PaymentMethod = () => {
                         <div className={`${styles.cardDetailsText} smNormalFaint`}>Select default payment method.</div>
                     </div>
                     <div className={styles.cardDetailsForm}>
-                        <div className={styles.cardGroup}>
-                            <fieldset>
-                                <CardDetail entry={"Visa ending in 1234"} exp={"06/2024"} active={true} logo={"Visa"}></CardDetail>
-                                <CardDetail entry={"Mastecard ending in 1234"} exp={"06/2024"} active={false} logo={"Mastercard"}></CardDetail>
-                            </fieldset>
-                        </div>
+                        <fieldset className={styles.cardGroup}>
+                            <CardDetail entry={"Visa ending in 1234"} exp={"06/2024"} active={true} logo={"Visa"}></CardDetail>
+                            <CardDetail entry={"Mastecard ending in 1234"} exp={"06/2024"} active={false} logo={"Mastercard"}></CardDetail>
+                        </fieldset>
                         <div className={`${styles.cardAction} smMediumFaint`}> 
                             <div className={styles.SVG}><PlusSVG/></div>
                             <div className={styles.cardActionText}>Add new payment method</div></div>

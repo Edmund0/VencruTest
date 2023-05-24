@@ -29,6 +29,11 @@
             
         }
 
+            .billDownload:hover {
+
+                                @apply cursor-pointer;
+            }
+
             .SVG {
                 @apply w-6 h-6;
             }

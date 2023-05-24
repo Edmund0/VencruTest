@@ -11,16 +11,30 @@ import { ReactComponent as SettingsSVG     } from '../Resources/svg/navigationSV
 import { ReactComponent as AccountSVG     } from '../Resources/svg/navigationSVG/AccountSVG.svg';
 import { ReactComponent as MenuSVG     } from '../Resources/svg/navigationSVG/MenuSVG.svg';
 import { ReactComponent as SearchSVG     } from '../Resources/svg/navigationSVG/SearchSVG.svg';
+import PHOTOJPG from '../Resources/img/Photo.jpg';
 import Box from '../Resources/img/box-24.png';
 import '../Common/fontStandard.tw.css';
+
+import { useState } from 'react';
+
+
 
 const SideNav = () => {
 
     const accountName = "Olivia Rhye";
     const accountEmail = "olivia@untitledui.com";
+
+    const [isHidden, setIsHidden] = useState(false);
+
+    const toggleClass = () => {
+
+        setIsHidden(!isHidden);
+
+    };
+    
     return ( 
     
-        <div className={styles.sideNavContainer}>
+        <div className={`${styles.sideNavContainer}`}>
 
             <div className={styles.sideNav}>
 
@@ -34,11 +48,12 @@ const SideNav = () => {
                                         <img src={Box} alt="purplebox" />
                                         <div className="xl2MediumHeavy">Untitled UI</div>
                                     </div>
-                                    <div className={styles.logoButton}><MenuSVG/></div>
+                                    <div className={styles.logoButton} onClick={toggleClass}><MenuSVG/></div>
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.search}> {/* Internal HTML Framework Incomplete */}
+                        
+                        <div className={`${styles.search} ${isHidden ? styles.mobileHidden : ""}`}> {/* Internal HTML Framework Incomplete */}
                             <div className={styles.searchBox}>
                                 <div className="relative">
                                 <input  className={`pl-10 w-full`} type="text" placeholder="Search" id="myInput"></input>
@@ -46,7 +61,7 @@ const SideNav = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.navigation}> {/*You need to create a conditional for the action box (i.e. hidden or not) || Add hidden as default */}
+                        <div className={`${styles.navigation} ${isHidden ? styles.mobileHidden : ""}`}> {/*You need to create a conditional for the action box (i.e. hidden or not) || Add hidden as default */}
                             <div className={styles.navCard}><div className={styles.navItem}>
                                 <div className={styles.navObject}> 
                                     <div className={styles.SVG}><HomeSVG/></div><div>Home</div>             
@@ -86,7 +101,7 @@ const SideNav = () => {
                     </div>
                     
 
-                    <div className={styles.footer}>
+                    <div className={`${styles.footer} ${isHidden ? styles.mobileHidden : ""}`}>
                         <div className={styles.footerNavigation}>
                             <div className={styles.navCard}><div className={styles.navItem}>
                                 <div className={styles.navObject}> 
@@ -106,7 +121,7 @@ const SideNav = () => {
                                     <div>New features available!</div>
                                     <div>Check out the new dashboard view. Pages now load faster. </div>
                                 </div>
-                                <div className={styles.featureImage}></div>
+                                <div className={styles.featureImage}><img src={PHOTOJPG} alt=""/></div>
                                 <div className={styles.featureAction}>
                                     <div>Dismiss</div>
                                     <div><a>What's new?</a></div>
@@ -118,7 +133,7 @@ const SideNav = () => {
                             <div className={styles.accountContainer}>
                                 <div className={styles.account}>
                                     <div className={styles.accountCard}>
-                                        <div className={styles.accountImage}>{/* add the URL Image Here */}</div>
+                                        <div className={styles.accountImage}><img src={PHOTOJPG} alt=""/></div>
                                         <div className={styles.accountData}>
                                             <div className={styles.accountName}>{accountName}</div>
                                             <div className={styles.accountEmail}>{accountEmail}</div>

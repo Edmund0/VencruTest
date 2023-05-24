@@ -102,6 +102,12 @@
                         
                     }
 
+                        .MainEmailPadding > input:hover {
+
+                            @apply cursor-pointer;
+                            
+                        }
+
                     .MainEmailLabel{
                         
 
@@ -124,7 +130,7 @@
 
                 }
 
-                    .AltEmailRadio{
+                    .AltEmailRadio {
 
                         /* Mobile */
                         @apply flex flex-row items-center;
@@ -132,6 +138,13 @@
                         /* height: 40px;*/
 
                     }
+
+                        .AltEmailRadio > input:hover {
+
+                            @apply cursor-pointer;
+                            
+                        }
+            
 
                         .AltEmailLabel{
 
@@ -146,7 +159,11 @@
                         
                     }
 
-                        .AltEmailInput > input {
+                        .AltEmailInput > div {
+                            @apply w-full;
+                        }
+
+                        .AltEmailInput > div input {
                             @apply w-full;
                         }
 
@@ -207,6 +224,12 @@
                     /* height: 20px;*/
 
                 }
+
+                    .cardAction:hover {
+
+                        @apply cursor-pointer;
+                        
+                    }
 
 
                     .SVG {

@@ -4,6 +4,7 @@ import { ReactComponent as DownloadSVG     } from '../../Resources/svg/DownloadS
 import { ReactComponent as DownArrowSVG     } from '../../Resources/svg/DownArrowSVG.svg';
 import { ReactComponent as PaidSVG     } from '../../Resources/svg/PaidSVG.svg';
 import { ReactComponent as UnpaidSVG     } from '../../Resources/svg/UnpaidSVG.svg';
+import { useState } from 'react';
 
   const Paid = () => {
 
@@ -32,11 +33,20 @@ import { ReactComponent as UnpaidSVG     } from '../../Resources/svg/UnpaidSVG.s
   }
 
 const Table = ({ data }) => {
+
+    const [allCheck, setAllCheck] = useState(false);
+
+    const toggleClass = () => {
+
+        setAllCheck(!allCheck);
+
+    };
+
     return (
       <table className={styles.table}>
         <thead>
           <tr>
-            <th className={`${styles.invoice} xsMediumFaint`}><div><input type="checkbox"/><div className={styles.InvoiceTitle}>Invoice<div className={styles.InvoiceSVG}><DownArrowSVG/></div></div></div></th>
+            <th className={`${styles.invoice} xsMediumFaint`}><div><input type="checkbox" onChange={toggleClass}/><div className={styles.InvoiceTitle}>Invoice<div className={styles.InvoiceSVG}><DownArrowSVG/></div></div></div></th>
             <th className={`${styles.amount} xsMediumFaint`}>Amount</th>
             <th className={`${styles.date} xsMediumFaint`}>Date</th>
             <th className={`${styles.status} xsMediumFaint`}>Status</th>

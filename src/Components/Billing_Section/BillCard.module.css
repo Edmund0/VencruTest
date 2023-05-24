@@ -36,6 +36,10 @@
         .invoice input {
             @apply w-5 h-5 rounded-md border border-solid border-gray-300;
         }
+            
+            .invoice input:hover {
+                @apply cursor-pointer;
+            }
 
         .InvoiceTitle {
 
@@ -81,6 +85,10 @@
             @apply flex flex-col justify-center items-center;
             @apply w-full;
         }
+
+            .download > div:hover {
+                @apply cursor-pointer;
+            }
 
   .table th,
   .table td {

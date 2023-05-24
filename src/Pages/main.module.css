@@ -67,7 +67,7 @@
 
         /* Desktop */
         @apply desktop:flex-row;
-        @apply desktop:w-[1160px];
+        @apply desktop:w-[1160px] desktop:h-full;
 
         /* Mobile */
         /* Problem Container is not taking the size of its parent container 
@@ -86,6 +86,8 @@
 
             /* Desktop */
             @apply desktop:w-[1160px];
+
+            
 
             /* MOBILE
 

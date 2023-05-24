@@ -1,6 +1,24 @@
 
 
 
+.search.mobileHidden, .navigation.mobileHidden, .footer.mobileHidden {
+
+    @apply flex;
+}
+
+    .footer.mobileHidden .feature {/**/
+
+        /* for the sake of mobile friendliness; I am just going to leave this hidden */
+        @apply hidden;
+
+    }
+
+.sideNavContainer {
+
+    @apply inline-block w-[375px] h-[100px];
+    @apply desktop:block desktop:w-auto desktop:h-auto;
+
+}
 
 .sideNav {
     @apply flex flex-col items-start;
@@ -9,6 +27,8 @@
     @apply desktop:flex-row;
     @apply desktop:w-[280px];
 
+    @apply fixed top-0 left-0 bg-white z-10;
+    @apply desktop:static desktop:z-10;
 
 }
 
@@ -127,6 +147,18 @@
 
                         }
 
+                            .navObject:hover {
+
+                                @apply cursor-pointer;
+        
+                            }
+                            
+                            .navObject:active {
+        
+                                @apply bg-gray-50;
+        
+                            }
+
                             .SVG {
                                 @apply w-6 h-6;
                             }
@@ -137,6 +169,12 @@
                             @apply gap-2 h-6;
 
                         }
+
+                            .navAction:hover {
+
+                                @apply cursor-pointer;
+        
+                            }
 
             .footer {
 
@@ -168,7 +206,7 @@
                     .feature {
 
                         @apply flex flex-col items-start;
-                        @apply gap-4 w-auto py-5 px-4;
+                        @apply gap-4 w-full py-5 px-4;
                         @apply bg-gray-50 border-r-8;
                         /* height: 292px; */
 
@@ -178,18 +216,26 @@
 
                             @apply flex flex-col items-start;
                             @apply gap-2;
-                            @apply w-auto;
+                            @apply w-full
                             /* height: 64px */
 
                         }
                         
                         .featureImage {
 
-                            @apply inline-block w-auto h-[136px] border-r-8;
+                            @apply inline-block w-full h-[136px] border-r-8;
                             @apply bg-purple-100;
                             /*background: #F4EBFF */
 
                         }
+
+                            .featureImage img {
+
+                                  
+                                @apply w-full h-full object-cover
+                                /*background: #F4EBFF */
+
+                            }
 
                         .featureAction {
 
@@ -231,10 +277,15 @@
                             .accountImage {
 
                                 @apply flex flex-col justify-center items-center;
-                                @apply w-10 border-r-[200px];
+                                @apply w-10 h-10 rounded-full overflow-hidden;
                                 /* h-40px */
 
                             }
+
+                                .accountImage img {
+
+     
+                                }
 
                             .accountData {
 
@@ -253,6 +304,12 @@
                             @apply w-5 h-5;
 
                         }
+
+                            .AccountSVG:hover {
+
+                                @apply cursor-pointer;
+        
+                            }
 
 
 

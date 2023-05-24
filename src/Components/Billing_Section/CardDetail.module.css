@@ -1,28 +1,86 @@
-.SVG {
-    @apply w-12 h-8 text-gray-500;
-}
+    .SVG {
+        @apply w-12 h-8 text-gray-500;
+    }
+
+
+
+    .cardContainer.active {
+
+        @apply bg-[#F9F5FF] border-[#D6BBFB];
+
+    }
+
+        .cardContainer.active .entry {
+
+            @apply text-[#53389E];
+
+        }
+
+        .cardContainer.active .expiry {
+
+            @apply text-[#7F56D9];
+    
+        }
+
+        .cardContainer.active .default {
+
+            @apply text-[#9E77ED];
+    
+        }
+
+        .cardContainer .edit {
+
+            @apply text-[#6941C6];
+    
+        }
+
+
 
 
     .cardContainer {
 
+        @apply flex flex-row justify-between items-start;
+        @apply p-4 gap-1 w-full bg-white;
+        @apply border rounded-md border-solid border-gray-200;
     }
         .cardInformation {
+
+            @apply flex flex-row justify-between items-start;
+            @apply gap-3;    
 
         }
 
             .cardData {
 
+                @apply flex flex-col items-start;
+                @apply gap-2;  
+
             }
 
                 .cardEnding{ 
+
+                    @apply flex flex-col items-start;
 
                 }
 
                 .cardEdit {
 
-
+                    @apply flex flex-row justify-between items-start;
+                    @apply gap-3;    
                 }
+
+                    .cardEdit:hover {
+
+                        @apply cursor-pointer;
+                        
+                    }
         
         .cardRadio {
 
         }
+
+            .cardRadio input:hover {
+
+                @apply cursor-pointer;
+
+            }
